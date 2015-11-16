@@ -54,7 +54,7 @@
 
     "files":
         [
-        {"includePattern": "gopath/bin/g10k"}
+        {"includePattern": "gopath/src/github.com/MattRiesterer/g10k/g10k"}
         ],
     "publish": true
 }
