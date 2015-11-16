@@ -1,5 +1,6 @@
 language: GO
 deploy:
+  skip_cleanup: true
   provider: bintray
   user: mattriesterer
   file: bintray
