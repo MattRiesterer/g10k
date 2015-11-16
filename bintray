@@ -20,16 +20,18 @@
     },
 
     /* Package version information.
-       In case the version already exists on Bintray, only the name fields is mandatory. */
+       In case the version already exists on Bintray, only the name fields is mandatory.
+       omitted in version:
+       "desc": "This is a version",
+       "released": "2015-01-04",
+       "vcs_tag": "0.5",
+       "attributes": [{"name": "VerAtt1", "values" : ["VerVal1"], "type": "string"},
+                      {"name": "VerAtt2", "values" : [1, 3.3, 5], "type": "number"},
+                      {"name": "VerAtt3", "values" : ["2015-01-01T19:43:37+0100"], "type": "date"}],
+       */
 
     "version": {
         "name": "0.1",
-        "desc": "This is a version",
-        "released": "2015-01-04",
-        "vcs_tag": "0.5",
-        "attributes": [{"name": "VerAtt1", "values" : ["VerVal1"], "type": "string"},
-                       {"name": "VerAtt2", "values" : [1, 3.3, 5], "type": "number"},
-                       {"name": "VerAtt3", "values" : ["2015-01-01T19:43:37+0100"], "type": "date"}],
         "gpgSign": false
     },
 
@@ -52,7 +54,7 @@
 
     "files":
         [
-        {"includePattern": "g10k"}
+        {"includePattern": "bin/g10k"}
         ],
     "publish": true
 }
