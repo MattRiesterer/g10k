@@ -54,7 +54,7 @@
 
     "files":
         [
-        {"includePattern": "bin/g10k"}
+        {"includePattern": "gopath/bin/g10k"}
         ],
     "publish": true
 }
