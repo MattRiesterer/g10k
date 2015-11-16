@@ -1,12 +1,12 @@
 # g10k
-my r10k fork in Go
+my r10k fork in Go  
 
 differences to r10k:
   - download each Puppet module git repository and Puppetlabs Forge version combination only once
   - most things (git, forge and copy operations) done in parallel over each branch
   - support for different ssh keys for each source inside the r10k yaml
-  
-  
+
+
 # building
 ```
 BUILDTIME=$(date -u '+%Y-%m-%d %H:%M:%S') ; go build -ldflags "-X main.buildtime '$BUILDTIME'"
@@ -46,7 +46,7 @@ BUILDTIME=$(date -u '+%Y-%m-%d %H:%M:%S') ; go build -ldflags "-X main.buildtime
 2015/08/11 18:07:46 DEBUG readPuppetfile(): Trying to parse: /tmp/example/example_master/Puppetfile
 2015/08/11 18:07:46 DEBUG Resolving example_dev
 2015/08/11 18:07:46 DEBUG Resolving example_master
-2015/08/11 18:07:46 DEBUG git repo url https://github.com/puppetlabs/puppetlabs-apt.git with ssh key 
+2015/08/11 18:07:46 DEBUG git repo url https://github.com/puppetlabs/puppetlabs-apt.git with ssh key
 2015/08/11 18:07:46 DEBUG Executing git clone --mirror https://github.com/puppetlabs/puppetlabs-apt.git /tmp/g10k/modules/https-__github.com_puppetlabs_puppetlabs-apt.git
 2015/08/11 18:07:49 Executing git clone --mirror https://github.com/puppetlabs/puppetlabs-apt.git /tmp/g10k/modules/https-__github.com_puppetlabs_puppetlabs-apt.git took 2.52431s
 2015/08/11 18:07:49 DEBUG Trying to get forge module puppetlabs-ntp-3.3.0
@@ -132,7 +132,7 @@ Synced test.yaml : 3 git repositories and 10 Forge modules in 5.5 s with git syn
 2015/08/11 18:08:47 DEBUG readPuppetfile(): Trying to parse: /tmp/example/example_master/Puppetfile
 2015/08/11 18:08:47 DEBUG Resolving example_dev
 2015/08/11 18:08:47 DEBUG Resolving example_master
-2015/08/11 18:08:47 DEBUG git repo url https://github.com/puppetlabs/puppetlabs-apt.git with ssh key 
+2015/08/11 18:08:47 DEBUG git repo url https://github.com/puppetlabs/puppetlabs-apt.git with ssh key
 2015/08/11 18:08:47 DEBUG Executing git --git-dir /tmp/g10k/modules/https-__github.com_puppetlabs_puppetlabs-apt.git remote update
 2015/08/11 18:08:48 Executing git --git-dir /tmp/g10k/modules/https-__github.com_puppetlabs_puppetlabs-apt.git remote update took 0.99846s
 2015/08/11 18:08:48 DEBUG Trying to get forge module puppetlabs-concat-latest
