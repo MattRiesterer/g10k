@@ -54,7 +54,7 @@
 
     "files":
         [
-        {"includePattern": "./gopath/*,*"}
+        {"includePattern": "./gopath/*.*"}
         ],
     "publish": true
 }
